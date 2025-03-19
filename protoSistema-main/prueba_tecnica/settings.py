@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'prueba_tecnica.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mssql',
-        'NAME': 'tiendaPractica',
+        'NAME': 'sistemavotaciones',
         'USER': 'carlos',
-        'PASSWORD': 'acm1ptardo',
+        'PASSWORD': 'hola123',
         'HOST': 'CARLO\SQLEXPRESS',
         'PORT': '',
         'OPTIONS':{'driver':'ODBC Driver 17 for SQL Server'},
