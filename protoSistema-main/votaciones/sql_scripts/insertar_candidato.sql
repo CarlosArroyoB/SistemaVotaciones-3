@@ -21,7 +21,7 @@ BEGIN
             END  
 
             -- Insertar nuevo votante
-            INSERT INTO Votante (nombre, partido, localidad)  
+            INSERT INTO Candidato (nombre, partido, localidad)  
             VALUES (@nombre, @partido, @localidad);  
         END
     ');
