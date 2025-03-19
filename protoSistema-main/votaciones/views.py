@@ -15,7 +15,7 @@ def registrar_votante(request):
 
         with connection.cursor() as cursor:
             try:
-                cursor.execute("EXEC sistVotaciones.dbo.insertar_votante %s, %s, %s, %s, %s, %s", 
+                cursor.execute("EXEC dbo.insertar_votante %s, %s, %s, %s, %s, %s", 
                     [
                         datos["nombre"], datos["apellidos"], datos["tipo_documento"],
                         datos["numero_documento"], datos["genero"], datos["localidad"]

@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'prueba_tecnica.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mssql',
-        'NAME': 'sistVotaciones',
+        'NAME': 'tiendaPractica',
         'USER': 'carlos',
         'PASSWORD': 'acm1ptardo',
         'HOST': 'CARLO\SQLEXPRESS',

@@ -1,5 +1,5 @@
 from django.apps import AppConfig
-from setup_base import crear_tablas, insertar_votante
+# from .setup_db import crear_tablas, insertar_votante
 
 class VotacionesConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'

@@ -8,4 +8,3 @@ class VotanteSerializer(serializers.Serializer):
     numero_documento = serializers.CharField(max_length=20)
     genero = serializers.CharField(max_length=1)
     localidad = serializers.CharField(max_length=10)
-# Compare this snippet from protoSistema-main/votaciones/urls.py:
