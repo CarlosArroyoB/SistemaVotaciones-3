@@ -14,3 +14,9 @@ class CandidatoSerializer(serializers.Serializer):
     nombre = serializers.CharField(max_length=100)
     partido = serializers.CharField(max_length=100)
     localidad = serializers.CharField(max_length=10)
+
+class VotoSerializer(serializers.Serializer):
+    id = serializers.IntegerField(read_only=True)
+    votante_id = serializers.CharField(max_length=20)
+    candidato_id = serializers.CharField(max_length=100)
+

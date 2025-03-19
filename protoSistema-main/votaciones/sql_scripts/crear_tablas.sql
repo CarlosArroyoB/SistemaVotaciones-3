@@ -25,10 +25,10 @@ IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Voto'
 BEGIN
     CREATE TABLE Voto (
         id INT IDENTITY(1,1) PRIMARY KEY,
-        votante_id INT NOT NULL,
-        candidato_id INT NOT NULL,
+        votante_id VARCHAR(20) NOT NULL,
+        candidato_id INT NOT NULL,  
         fecha_voto DATETIME DEFAULT GETDATE(),
-        FOREIGN KEY (votante_id) REFERENCES Votante(id),
-        FOREIGN KEY (candidato_id) REFERENCES Candidato(id)
+        FOREIGN KEY (votante_id) REFERENCES Votante(numero_documento),
+        FOREIGN KEY (candidato_id) REFERENCES Candidato(id)  
     );
 END;

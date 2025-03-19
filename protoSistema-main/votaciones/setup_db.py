@@ -15,4 +15,4 @@ def inicializar_base_datos():
     ejecutar_sql_desde_archivo("crear_tablas.sql")
     ejecutar_sql_desde_archivo("insertar_votante.sql")
     ejecutar_sql_desde_archivo("insertar_candidato.sql")
-    # ejecutar_sql_desde_archivo("insertar_voto.sql")
+    ejecutar_sql_desde_archivo("insertar_voto.sql")
