@@ -16,7 +16,6 @@ BEGIN
     CREATE TABLE Candidato (
         id INT IDENTITY(1,1) PRIMARY KEY,
         nombre VARCHAR(100) NOT NULL,
-        apellidos VARCHAR(100) NOT NULL,
         partido VARCHAR(100) NOT NULL,
         localidad VARCHAR(10) NOT NULL CHECK (localidad IN ('A', 'B', 'C', 'D', 'E'))  
     );
